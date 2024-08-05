@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import Historia from './pages/Historia';
-import Countdown from './components/Countdown/countdown';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -24,7 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <HomePage /> */}
+      <HomePage />
       <Historia />
     </>
   );

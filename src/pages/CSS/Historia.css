@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background-image: url('./public/img/hist/fundo_seção.png');
+  background-image: url('./img/hist/fundo_seção.png');
   background-size: cover;
   background-position: center;
   justify-content: center;

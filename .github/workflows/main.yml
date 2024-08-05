@@ -21,11 +21,14 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: List build directory
+      run: ls -la dist
+
     - name: FTP Deploy Locaweb
       uses: locaweb/ftp-deploy@1.0.0
       with:
         host: ${{ secrets.HOST }}
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-        localDir: "dist"  # Se a pasta dist estiver na raiz do projeto
+        localDir: "/dist"  # Se a pasta dist estiver na raiz do projeto
         remoteDir: "/public_html"  # Ajuste conforme necessário para seu servidor

@@ -15,12 +15,6 @@ jobs:
       with:
         node-version: '14'  # ou a versão do Node.js que seu projeto utiliza
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: List build directory
-      run: ls -la dist
-
     - name: FTP Deploy Locaweb
       uses: locaweb/ftp-deploy@1.0.0
       with:

@@ -1,0 +1,42 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais da seção */
+.section1 {
+  display: flex;
+  margin-top: 80px; /* Ajuste conforme necessário */
+  height: calc(100vh - 80px); /* Ajuste para a altura desejada */
+  width: 100vw; /* Ocupa 100% da largura da viewport */
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; /* Inclui padding e border na largura e altura */
+}
+
+/* Estilos do vídeo de fundo */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz o vídeo cobrir a área sem distorcer */
+  z-index: 0; /* Coloca o vídeo atrás dos outros elementos */
+}
+
+/* Overlay branco para suavizar o vídeo */
+.overlay-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 92%);
+  z-index: 1; /* Coloca o overlay na frente do vídeo */
+}

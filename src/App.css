@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow-x: hidden; /* Remove rolagem horizontal */
+  scroll-behavior: smooth;
+}
+
+
+.back-to-top {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff5e00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1100; /* Garantir que o botão fique acima de outros elementos */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-container {
+    height: calc(90vh - 100px);
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-container {
+    top: 0px;
+    height: calc(90vh - 100px);
+    width: 100%;
+  }
+}
+
+
+/* Personalização da scrollbar para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #444; /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000; /* Cor do polegar da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 3px solid #444; /* Borda para adicionar espaço ao redor do polegar */
+}
+
+/* Personalização da scrollbar para Firefox */
+* {
+  scrollbar-color: rgba(216,79,29,255) black; /* Define a cor do polegar e do fundo da barra de rolagem */
+}
+
+

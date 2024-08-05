@@ -1,0 +1,48 @@
+.carousel {
+    position: relative;
+    width: 100%; /* Ocupe a largura total do contêiner do carrossel */
+    height: 100%; /* Ajuste a altura do carrossel */
+  }
+  
+  .carousel img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner, mantendo a proporção */
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-controls button {
+    background: unset;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-indicators .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators .indicator.active {
+    background: black;
+  }
+  

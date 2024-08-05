@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: urL('./public/img/hist/FUNDO-CONTAGEM.png');
+    background-image: urL('./img/hist/FUNDO-CONTAGEM.png');
     background-size: cover;
     width: 100%;
 

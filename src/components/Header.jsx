@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import './Header.css'; // Importa o CSS específico para o Header
 
@@ -37,7 +38,7 @@ const Header = ({ onNavigate }) => {
         <a href="#atracoes" className='nav-button' onClick={() => onNavigate('atracoes')}>ATRAÇÕES</a>
         <a href="#bandas" className='nav-button' onClick={() => onNavigate('bandas')}>BANDAS</a>
         <a href="#patrocinadores" className='nav-button' onClick={() => onNavigate('patrocinadores')}>PATROCINADORES</a>
-        <a href="#contato" className='nav-button' onClick={() => onNavigate('contato')}>Contato</a>
+        <a href="#contato" className='nav-button' onClick={() => onNavigate('contato')}>CONTATO</a>
       </nav>
     </header>
   );

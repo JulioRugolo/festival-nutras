@@ -14,5 +14,6 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
-  }
+  },
+  assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.jpg', '**/*.jpeg', '**/*.png']
 });

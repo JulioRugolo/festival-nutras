@@ -10,8 +10,8 @@ import faca from '../assets/img/elementos/02-faca.png';
 
 const Historia = () => {
   return (
-    <section id="historia" className="section-container section2" style={{ backgroundImage: `url(${bgSection})` }}>
-      <div className='hist-container'>
+    <section id="historia" className="section-container section2" >
+      <div className='hist-container' style={{ backgroundImage: `url(${bgSection})` }}>
         <img className='hist-evento' src={imgSetor} alt="Setor" />
         <img className='logo-nutras' src={logoNutras} alt="Logo Nutras" />
         <div className='hist-content'>

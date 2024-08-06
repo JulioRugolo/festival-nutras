@@ -8,7 +8,7 @@ import edicao_2023 from '../assets/img/edicoes/FOTO_EDIÇÃO_2023.png';
 
 const EdicoesPage = () => {
   return (
-    <section id='edicoes' className='section-container'>
+    <section id='edicoes' className='section-container edicoes'>
       <div className='edicoes-content-title'>
           <img src={garfo} alt="Garfo" />
           <h1>EDIÇÕES ANTERIORES</h1>

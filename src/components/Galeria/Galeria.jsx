@@ -8,6 +8,7 @@ import './Galeria.css';
 const Galeria = ({ photos, onPhotoClick }) => {
   const settings = {
     infinite: true,
+    dots: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,

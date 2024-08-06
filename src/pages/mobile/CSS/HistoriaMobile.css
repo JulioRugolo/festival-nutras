@@ -32,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   gap: 20px;
   padding: 20px;
 }
@@ -67,10 +67,10 @@
 
 .hist-content-mobile p {
   font-family: 'AkhandSoft';
-  font-size: 1rem;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-  color: block;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  color: black;
+  line-height: 2;
+  text-align: center;
 }
 
 .hist-content-title-mobile img {
@@ -100,8 +100,9 @@
 }
 
 .hist-2-content-mobile {
-  text-align: center;
-  font-size: 1rem;
-  color: white;
   font-family: 'AkhandSoft';
+  font-size: 1.2rem;
+  color: white;
+  line-height: 2;
+  text-align: center;
 }

@@ -38,11 +38,11 @@
     max-width: 100%;
     max-height: 80vh;
     object-fit: contain;
-    border-radius: 10px;
   }
   
   .photo-container .logo {
     position: absolute;
+    z-index: 900;
     bottom: 10px;
     right: 10px;
     width: 150px;
@@ -95,7 +95,7 @@
     font-size: 2rem;
     z-index: 1001;
   }
-
+  
   .nav-button:hover {
     background-color: rgb(0, 0, 0);
     font-weight: 700;
@@ -108,7 +108,7 @@
   .next-button {
     right: 10px;
   }
-
+  
   .loader {
     border: 8px solid #f3f3f3; /* Light grey */
     border-top: 8px solid #ff5e00; /* Orange */

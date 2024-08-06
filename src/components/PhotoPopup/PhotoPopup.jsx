@@ -14,6 +14,35 @@ const PhotoPopup = ({ photo, onClose, onNext, onPrev }) => {
     setIsLoading(false);
   };
 
+  const handleDownload = () => {
+    const canvas = document.createElement('canvas');
+    const img = new Image();
+    img.crossOrigin = 'Anonymous'; // Evitar problemas de CORS
+    img.src = photo;
+
+    img.onload = () => {
+      const ctx = canvas.getContext('2d');
+      canvas.width = img.width;
+      canvas.height = img.height;
+
+      ctx.drawImage(img, 0, 0);
+      
+      const logoImg = new Image();
+      logoImg.src = logo;
+      
+      logoImg.onload = () => {
+        const logoWidth = img.width * 0.2; // Ajustar o tamanho do logo relativo à imagem
+        const logoHeight = logoImg.height * (logoWidth / logoImg.width);
+        ctx.drawImage(logoImg, img.width - logoWidth - 10, img.height - logoHeight - 10, logoWidth, logoHeight);
+        
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/jpeg', 1.0);
+        link.download = 'photo_with_logo.jpg';
+        link.click();
+      };
+    };
+  };
+
   return (
     <div className='photo-popup'>
       <div className='photo-popup-content'>
@@ -31,7 +60,7 @@ const PhotoPopup = ({ photo, onClose, onNext, onPrev }) => {
         </div>
         <button onClick={onPrev} className='pop-up-button prev-button'>&#8249;</button>
         <button onClick={onNext} className='pop-up-button next-button'>&#8250;</button>
-        <a href={photo} download className='download-button'>Download</a>
+        <button onClick={handleDownload} className='download-button'>Download</button>
       </div>
     </div>
   );

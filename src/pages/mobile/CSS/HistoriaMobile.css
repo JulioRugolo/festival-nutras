@@ -1,0 +1,139 @@
+/* src/pages/CSS/HistoriaMobile.css */
+@font-face {
+    font-family: 'amsiprocond-ultra';
+    src: url('/fonts/amsiprocond-ultra.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'AkhandSoft';
+    src: url('/fonts/AkhandSoft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .section-container-mobile {
+    scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do seu header */
+  }
+  
+  .section2-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-image: url('../../assets/img/hist/bg_section.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+  }
+  
+  .hist-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 60px;
+    height: calc(100vh - 80px);
+  }
+  
+  .hist-evento-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .logo-nutras-mobile {
+    position: absolute;
+    width: 8%;
+    align-self: flex-end;
+    top: 158%;
+    left: 44%;
+  }
+  
+  .hist-content-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .hist-content-title-mobile {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    color: rgba(216,79,29,255);
+    font-size: 2.5rem;
+    font-family: 'amsiprocond-ultra';
+  }
+  
+  .hist-content-mobile p {
+    font-family: 'AkhandSoft';
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    color: white;
+    line-height:  1.5;
+  }
+  
+  .hist-content-title-mobile img {
+    width: 20%;
+  }
+  
+  .hist-2-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    gap: 80px;
+  }
+  
+  .hist-content-title2-mobile {
+    width: 200px;
+    color: rgba(216,79,29,255);
+    font-family: 'amsiprocond-ultra';
+  }
+  
+  .hist-2-content-mobile {
+    width: 20%;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  /* Estilos para responsividade */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .section-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .section-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.2rem;
+    }
+  
+    .section-subtitle {
+      font-size: 1rem;
+    }
+  
+    .section-text {
+      font-size: 0.8rem;
+    }
+  }
+  

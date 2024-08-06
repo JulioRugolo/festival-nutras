@@ -3,9 +3,13 @@ import './App.css';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import Historia from './pages/Historia';
+import HomePageMobile from './pages/mobile/HomePageMobile';
+import HistoriaMobile from './pages/mobile/HistoriaMobile';
+import useDeviceDetect from './useDeviceDetect';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const { isMobile } = useDeviceDetect();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,9 +26,20 @@ function App() {
 
   return (
     <>
-      <Header />
-      <HomePage />
-      <Historia />
+      
+      {isMobile ? (
+        <>
+          {/* <Header /> */}
+          <HomePageMobile />
+          {/* <HistoriaMobile /> */}
+        </>
+      ) : (
+        <>
+          <Header />
+          <HomePage />
+          <Historia />
+        </>
+      )}
     </>
   );
 }

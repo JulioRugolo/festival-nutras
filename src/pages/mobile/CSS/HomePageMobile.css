@@ -1,0 +1,31 @@
+/* src/pages/CSS/HomePageMobile.css */
+.home-page-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    background-color: #100c14; /* Mude a cor de fundo conforme necessário */
+    background-image: url('../../../assets/img/hist/cta.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .home-page-mobile .logo {
+    width: 300px;
+
+  }
+  
+  .home-page-mobile h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color : white; /* Mude a cor do texto conforme necessário */
+  }
+  
+  .home-page-mobile p {
+    font-size: 1.2rem;
+    color : white; /* Mude a cor do texto conforme necessário */
+
+  }
+  

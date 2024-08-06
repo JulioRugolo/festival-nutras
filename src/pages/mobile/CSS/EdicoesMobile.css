@@ -1,0 +1,65 @@
+/* src/pages/CSS/EdicoesMobile.css */
+.edicoes-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 0 20px;
+    background-color: antiquewhite;
+    background-image: url('../../../assets/img/edicoes/FUNDO_EDIÇÃO_ANTERIOR.png');
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .edicoes-content-title-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    font-family: 'amsiprocond-ultra';
+    margin: 20px 0;
+  }
+  
+  .edicoes-content-title-mobile img {
+    width: 10%;
+  }
+  
+  .edicoes-anos-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .edicoes-anos-mobile h2 {
+    font-family: 'AkhandSoft';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  
+  .edicoes-anos-mobile h2:hover {
+    color: white;
+  }
+  
+  .edicoes-anos-mobile h2.active {
+    color: white;
+  }
+  
+  .edicoes-content-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  

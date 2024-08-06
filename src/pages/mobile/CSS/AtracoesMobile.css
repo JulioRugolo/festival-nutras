@@ -1,0 +1,39 @@
+/* src/pages/CSS/AtracoesMobile.css */
+.atracoes-mobile {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .title-mobile {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'amsiprocond-ultra';
+  }
+  
+  .atracoes-content-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .atracao-item-mobile {
+    text-align: center;
+  }
+  
+  .atracao-item-mobile img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .atracao-item-mobile h2 {
+    font-size: 1.5rem;
+    font-family: 'amsiprocond-ultra';
+    margin: 10px 0;
+  }
+  
+  .atracao-item-mobile p {
+    font-size: 1rem;
+  }
+  

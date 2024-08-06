@@ -1,0 +1,38 @@
+/* src/pages/CSS/ContatoMobile.css */
+.contato-mobile {
+    background-color: #111111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 10px solid #ff5e00;
+  }
+  
+  .contato-logo-mobile img {
+    height: 80px;
+  }
+  
+  .contato-info-mobile {
+    margin: 20px 0;
+  }
+  
+  .contato-info-mobile p {
+    margin: 5px 0;
+    font-family: 'amsiprocond-ultra';
+  }
+  
+  .contato-social-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .contato-social-mobile a {
+    color: white;
+    font-size: 30px;
+    transition: color 0.3s;
+  }
+  
+  .contato-social-mobile a:hover {
+    color: #ff5e00;
+  }
+  

@@ -11,6 +11,10 @@ import EdicoesPage from './pages/EdiçõesPage';
 import Atracoes from './pages/AtracoesPage';
 import BandaPage from './pages/BandaPage';
 import ContatoPage from './pages/ContatoPage';
+import AtracoesMobile from './pages/mobile/AtracoesMobile';
+import ContatoMobile from './pages/mobile/ContatoMobile';
+import BandaMobile from './pages/mobile/BandaMobile';
+import EdicoesMobile from './pages/mobile/EdicoesMobile';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -34,22 +38,26 @@ function App() {
       
       {isMobile ? (
         <>
-          {/* <Header /> */}
+          <Header />
           <HomePageMobile />
-          {/* <HistoriaMobile /> */}
+          <EdicoesMobile />
+          <AtracoesMobile />
+          <BandaMobile />
+          <HistoriaMobile />
+          <ContatoMobile />
         </>
       ) : (
         <>
           <Header />
           <HomePage />
           <Space />
-          <Historia />
           <Space />
           <EdicoesPage />
           <Space />
           <Atracoes />
           <Space />
           <BandaPage />
+          <Historia />
           <ContatoPage />
         </>
       )}

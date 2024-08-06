@@ -56,11 +56,11 @@ const PhotoPopup = ({ photo, onClose, onNext, onPrev }) => {
             style={{ display: isLoading ? 'none' : 'block' }}
             onLoad={handleImageLoad}
           />
-          <img src={logo} alt="Logo" className='logo' />
+          <img src={logo} alt="Logo" className='logo' style={{ display: isLoading ? 'none' : 'block' }} />
         </div>
-        <button onClick={onPrev} className='pop-up-button prev-button'>&#8249;</button>
-        <button onClick={onNext} className='pop-up-button next-button'>&#8250;</button>
-        <button onClick={handleDownload} className='download-button'>Download</button>
+        <button onClick={onPrev} className='pop-up-button prev-button' style={{ display: isLoading ? 'none' : 'block' }}>&#8249;</button>
+        <button onClick={onNext} className='pop-up-button next-button' style={{ display: isLoading ? 'none' : 'block' }}>&#8250;</button>
+        <button onClick={handleDownload} className='download-button' style={{ display: isLoading ? 'none' : 'block' }}>Download</button>
       </div>
     </div>
   );

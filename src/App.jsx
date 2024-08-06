@@ -7,6 +7,7 @@ import HomePageMobile from './pages/mobile/HomePageMobile';
 import HistoriaMobile from './pages/mobile/HistoriaMobile';
 import useDeviceDetect from './useDeviceDetect';
 import Space from './components/space/space';
+import EdicoesPage from './pages/EdiçõesPage';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -41,6 +42,7 @@ function App() {
           <Space />
           <Historia />
           <Space />
+          <EdicoesPage />
 
         </>
       )}

@@ -1,8 +1,5 @@
 import './CSS/Atracoes.css';
-import musicShow from '../assets/img/atracoes/BANDA.JPG';
-import prizeDraws from '../assets/img/atracoes/IMAGEM_ATRAÇÕES.png';
 import foodStations from '../assets/img/atracoes/IMAGEM_ATRAÇÕES.png';
-import kidsSpace from '../assets/img/atracoes/kids.JPG';
 import garfo from '../assets/img/elementos/01-garfo.png';
 import faca from '../assets/img/elementos/02-faca.png';
 

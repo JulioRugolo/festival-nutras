@@ -1,5 +1,4 @@
 // src/pages/BandaPage.jsx
-import React from 'react';
 import './CSS/Banda.css';
 import banda1 from '../assets/img/bandas/banda1.png';
 import banda2 from '../assets/img/bandas/banda2.png';

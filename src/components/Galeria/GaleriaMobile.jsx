@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 // src/components/Galeria/GaleriaMobile.jsx
-import React from 'react';
 import './GaleriaMobile.css';
 
 const GaleriaMobile = ({ photos, onPhotoClick }) => {

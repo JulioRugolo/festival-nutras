@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './CSS/Edicoes.css';
 import garfo from '../assets/img/elementos/01-garfo.png';
 import faca from '../assets/img/elementos/02-faca.png';

@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 // src/components/Galeria/Galeria.jsx
-import React from 'react';
 import './Galeria.css';
 
 const Galeria = ({ photos, onPhotoClick }) => {

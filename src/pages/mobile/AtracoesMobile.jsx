@@ -1,5 +1,4 @@
 // src/pages/mobile/AtracoesMobile.jsx
-import React from 'react';
 import './CSS/AtracoesMobile.css';
 import musicShow from '../../assets/img/atracoes/BANDA.JPG';
 import prizeDraws from '../../assets/img/atracoes/IMAGEM_ATRAÇÕES.png';

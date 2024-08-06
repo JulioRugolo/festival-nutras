@@ -1,5 +1,4 @@
 // src/pages/ContatoPage.jsx
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import './CSS/Contato.css';

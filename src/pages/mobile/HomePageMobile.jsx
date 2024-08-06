@@ -1,4 +1,3 @@
-import React from 'react';
 import './CSS/HomePageMobile.css';
 import bg from '../../assets/videos/vt_bg2.mp4';
 

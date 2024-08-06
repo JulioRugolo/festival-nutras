@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 // src/components/PhotoPopup/PhotoPopup.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './PhotoPopup.css';
 import logo from '../../assets/img/festival.png'; // Importe o logo
 

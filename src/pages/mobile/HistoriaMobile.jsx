@@ -1,8 +1,4 @@
 // src/pages/mobile/HistoriaMobile.jsx
-import React from 'react';
-import bgSection from '../../assets/img/hist/bg_section.png';
-import cta from '../../assets/img/hist/cta.png';
-import fundoContagem from '../../assets/img/hist/FUNDO-CONTAGEM.png';
 import imgSetor from '../../assets/img/hist/Imagem_setor.png';
 import logoNutras from '../../assets/img/hist/logo_nutras.png';
 import garfo from '../../assets/img/elementos/01-garfo.png';

@@ -10,6 +10,7 @@ import Space from './components/space/space';
 import EdicoesPage from './pages/EdiçõesPage';
 import Atracoes from './pages/AtracoesPage';
 import BandaPage from './pages/BandaPage';
+import ContatoPage from './pages/ContatoPage';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -49,6 +50,7 @@ function App() {
           <Atracoes />
           <Space />
           <BandaPage />
+          <ContatoPage />
         </>
       )}
     </>

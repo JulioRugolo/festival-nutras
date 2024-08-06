@@ -1,0 +1,46 @@
+/* src/pages/CSS/Contato.css */
+.contato-container {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 10px solid #ff5e00;
+    position: relative;
+    height: 150px;
+  }
+  
+  .contato-logo {
+    position: relative;
+    top: -60px; /* Ajuste este valor conforme necessário para a quantidade desejada de sobreposição */
+  }
+  
+  .contato-logo img {
+    height: 250px;
+  }
+  
+  .contato-info {
+    text-align: left;
+  }
+  
+  .contato-info p {
+    margin: 5px 0;
+    font-family: 'AkhandSoft';
+    font-size: 1rem;
+  }
+  
+  .contato-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .contato-social a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .contato-social a:hover {
+    color: #ff5e00;
+  }
+  

@@ -1,31 +1,63 @@
 /* src/pages/CSS/HomePageMobile.css */
 .home-page-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    height: 90vh;
-    text-align: center;
-    background-color: #100c14; /* Mude a cor de fundo conforme necessário */
-    background-image: url('../../../assets/img/hist/cta.png');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-  }
-  
-  .home-page-mobile .logo {
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  background-color: #100c14; /* Mude a cor de fundo conforme necessário */
+  background-image: url('../../../assets/img/hist/cta.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
 
-  }
-  
-  .home-page-mobile h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color : white; /* Mude a cor do texto conforme necessário */
-  }
-  
-  .home-page-mobile p {
-    font-size: 1.2rem;
-    color : white; /* Mude a cor do texto conforme necessário */
+.home-page-mobile .logo {
+  width: 300px;
+  margin-bottom: 30px;
+}
 
-  }
+.home-page-mobile h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white; /* Mude a cor do texto conforme necessário */
+}
+
+.home-page-mobile p {
+  font-size: 1.2rem;
+  color: white; /* Mude a cor do texto conforme necessário */
+  margin-bottom: 30px;
+
+}
+
+.contato-info-mobile {
   
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contato-info-mobile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contato-info-mobile p {
+  margin: 5px 0;
+}
+
+.contato-social-mobile {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contato-social-mobile a {
+  color: white;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.contato-social-mobile a:hover {
+  color: #ff5e00;
+}

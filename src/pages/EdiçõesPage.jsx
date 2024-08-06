@@ -151,7 +151,7 @@ const photos2023Large = [
 
 const EdicoesPage = () => {
   const [selectedYear, setSelectedYear] = useState('2022');
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
 
   const photosSmall = {
     '2022': photos2022Small,
@@ -168,11 +168,21 @@ const EdicoesPage = () => {
   };
 
   const handlePhotoClick = (index) => {
-    setSelectedPhoto(photosLarge[selectedYear][index]);
+    setSelectedPhotoIndex(index);
   };
 
   const closePopup = () => {
-    setSelectedPhoto(null);
+    setSelectedPhotoIndex(null);
+  };
+
+  const showNextPhoto = () => {
+    setSelectedPhotoIndex((prevIndex) => (prevIndex + 1) % photosLarge[selectedYear].length);
+  };
+
+  const showPrevPhoto = () => {
+    setSelectedPhotoIndex((prevIndex) =>
+      prevIndex === 0 ? photosLarge[selectedYear].length - 1 : prevIndex - 1
+    );
   };
 
   return (
@@ -183,13 +193,30 @@ const EdicoesPage = () => {
         <img src={faca} alt="Faca" />
       </div>
       <div className='edicoes-anos'>
-        <h2 onClick={() => handleYearClick('2022')}>2022</h2>
-        <h2 onClick={() => handleYearClick('2023')}>2023</h2>
+        <h2
+          onClick={() => handleYearClick('2022')}
+          className={selectedYear === '2022' ? 'active' : ''}
+        >
+          2022
+        </h2>
+        <h2
+          onClick={() => handleYearClick('2023')}
+          className={selectedYear === '2023' ? 'active' : ''}
+        >
+          2023
+        </h2>
       </div>
       <div className='edicoes-content'>
         <Galeria photos={photosSmall[selectedYear]} onPhotoClick={handlePhotoClick} />
       </div>
-      {selectedPhoto && <PhotoPopup photo={selectedPhoto} onClose={closePopup} />}
+      {selectedPhotoIndex !== null && (
+        <PhotoPopup
+          photo={photosLarge[selectedYear][selectedPhotoIndex]}
+          onClose={closePopup}
+          onNext={showNextPhoto}
+          onPrev={showPrevPhoto}
+        />
+      )}
     </section>
   );
 };

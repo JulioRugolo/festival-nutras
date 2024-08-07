@@ -29,8 +29,10 @@
 
 .nav {
   display: flex;
+  align-items: center;
   margin-right: 100px;
-  gap: 20px;
+  gap: 2px;
+  color: rgba(255, 255, 255, 0.379);
   z-index: 1; /* Garante que o menu fique acima da imagem */
 }
 
@@ -98,10 +100,10 @@
     position: absolute;
     justify-content: space-around;
     top: 70px; /* Ajuste conforme necessário para o menu aparecer abaixo do cabeçalho */
-    height: 500px;
+    height: 550px;
     align-self: flex-start;
     background-color: black;
-    padding-top: 80px;
+    padding-top: 90px;
     color: white;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -113,6 +115,7 @@
 
   .menu-toggle {
     display: block;
+    left: 5px;
   }
 
   .nav a {
@@ -122,6 +125,6 @@
   .header img {
     position: absolute;
     top: 89.5%; /* Ajusta para que metade da imagem esteja visível no cabeçalho */
-    left: 27%;
+    left: 24%;
   }
 }

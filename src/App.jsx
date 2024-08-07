@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -20,6 +19,7 @@ import EdicoesMobile from './pages/mobile/EdicoesMobile';
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const { isMobile } = useDeviceDetect();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,9 +34,23 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Simulate a loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the delay as needed
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loader-homescreen">
+        <div className="spinner-homescreen"></div>
+      </div>
+    );
+  }
+
   return (
     <>
-      
       {isMobile ? (
         <>
           <Header />

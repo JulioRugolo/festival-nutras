@@ -19,9 +19,17 @@ html, body {
   height: 100%;
   background: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.loader-logo {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 .spinner-homescreen {
@@ -31,6 +39,11 @@ html, body {
   border-top: 5px solid orange;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  font-size: 18px;
 }
 
 @keyframes spin {
@@ -40,6 +53,11 @@ html, body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Ocultar conteúdo enquanto carrega */
+.hidden {
+  display: none;
 }
 
 /* Restante do seu CSS */
@@ -65,7 +83,6 @@ html, body {
 .back-to-top:hover {
   background-color: #0056b3;
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {

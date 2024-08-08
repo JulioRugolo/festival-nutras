@@ -15,6 +15,7 @@ import AtracoesMobile from './pages/mobile/AtracoesMobile';
 import ContatoMobile from './pages/mobile/ContatoMobile';
 import BandaMobile from './pages/mobile/BandaMobile';
 import EdicoesMobile from './pages/mobile/EdicoesMobile';
+import festivalLogo from './assets/img/festival.png';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -34,48 +35,46 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    // Simulate a loading delay
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust the delay as needed
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="loader-homescreen">
-        <div className="spinner-homescreen"></div>
-      </div>
-    );
-  }
+  const handleVideoLoaded = () => {
+    setLoading(false);
+  };
 
   return (
     <>
-      {isMobile ? (
-        <>
-          <Header />
-          <HomePageMobile />
-          <EdicoesMobile />
-          <AtracoesMobile />
-          <BandaMobile />
-          <HistoriaMobile />
-          <ContatoMobile />
-        </>
-      ) : (
-        <>
-          <Header />
-          <HomePage />
-          <Space />
-          <Space />
-          <EdicoesPage />
-          <Space />
-          <Atracoes />
-          <Space />
-          <BandaPage />
-          <Historia />
-          <ContatoPage />
-        </>
+      {loading && (
+        <div className="loader-homescreen">
+          <img src={festivalLogo} alt="Festival Logo" className="loader-logo" />
+          <div className="spinner-homescreen"></div>
+          <div className="loading-text">Carregando...</div>
+        </div>
       )}
+      <div className={loading ? 'hidden' : ''}>
+        {isMobile ? (
+          <>
+            <Header />
+            <HomePageMobile onVideoLoaded={handleVideoLoaded} />
+            <EdicoesMobile />
+            <AtracoesMobile />
+            <BandaMobile />
+            <HistoriaMobile />
+            <ContatoMobile />
+          </>
+        ) : (
+          <>
+            <Header />
+            <HomePage onVideoLoaded={handleVideoLoaded} />
+            <Space />
+            <Space />
+            <EdicoesPage />
+            <Space />
+            <Atracoes />
+            <Space />
+            <BandaPage />
+            <Historia />
+            <ContatoPage />
+          </>
+        )}
+      </div>
     </>
   );
 }

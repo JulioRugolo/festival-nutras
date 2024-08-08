@@ -7,11 +7,11 @@ const Atracoes = () => {
   return (
     <section id='atracoes' className="section-container atracoes">
       <div className='atracoes-content-title'>
-            <img src={garfo} alt="Garfo" />
-            <h1>Atrações</h1>
-            <img src={faca} alt="Faca" />
-          </div>
-      <div className='atracoes-content'>
+        <div className='title'>
+          <img src={garfo} alt="Garfo" />
+          <h1>Atrações</h1>
+          <img src={faca} alt="Faca" />
+        </div>
         <div className='atracao-text'>
           <div className='atracao-item'>
             <h2>SHOWS DE MÚSICA</h2>
@@ -30,12 +30,10 @@ const Atracoes = () => {
             <p>Muitos sorteios de brindes durante todo o evento.</p>
           </div>
         </div>
-        <div className='atracao-images'>
-          <div className='atracao-image-item'>
-            <img src={foodStations} alt="Diversas Estações" />
-          </div>
+      </div>
 
-        </div>
+      <div className='atracao-image-item'>
+        <img src={foodStations} alt="Diversas Estações" />
       </div>
     </section>
   );

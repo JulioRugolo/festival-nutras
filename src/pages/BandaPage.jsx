@@ -19,19 +19,16 @@ const BandaPage = () => {
           <div className='banda-image'>
             <img src={banda1} alt="Banda 1" />
           </div>
-          <h2>RED FOX</h2>
         </div>
         <div className='banda-item'>
           <div className='banda-image'>
             <img src={banda2} alt="Banda 2" />
           </div>
-          <h2>LUCAS PRADO</h2>
         </div>
         <div className='banda-item'>
           <div className='banda-image'>
             <img src={banda3} alt="Banda 3" />
           </div>
-          <h2>4NS</h2>
         </div>
       </div>
     </section>

@@ -1,0 +1,51 @@
+.patrocinadores-page {
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    min-height: calc(100vh - 80px);
+  }
+  
+  .title {
+    font-family: 'AmsiProCond-Ultra', sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+    .title img {
+        width: 10%;
+    }
+
+  
+  .patrocinadores-container,
+  .apoio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .patrocinador-box,
+  .apoio-box {
+    background-color: white;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    flex: 0 1 150px;
+  }
+  
+  .patrocinador-box {
+    width: 200px;
+    height: 150px;
+  }
+  
+  .apoio-box {
+    width: 150px;
+    height: 100px;
+  }
+  

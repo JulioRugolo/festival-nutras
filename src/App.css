@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'AmsiProCond-Ultra';
+  src: url('/fonts/amsiprocond-ultra.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akhand Soft';
+  src: url('/fonts/AkhandSoft.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,6 +19,7 @@ html, body {
   overflow-x: hidden; /* Remove rolagem horizontal */
   scroll-behavior: smooth;
   height: 100%;
+  font-family: 'Akhand Soft', sans-serif; /* Define a fonte padrão para todo o corpo */
 }
 
 #root {
@@ -72,12 +87,13 @@ html, body {
   cursor: pointer;
   font-size: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1100; /* Garantir que o botão fique acima de outros elementos */
+  z-index: 1200; /* Garantir que o botão fique acima de outros elementos */
   display: flex;
   align-items: center;
   padding: 10px;
   justify-content: center;
   border-radius: 50%;
+  transition: background-color 0.3s;
 }
 
 .back-to-top:hover {
@@ -118,4 +134,18 @@ html, body {
 /* Personalização da scrollbar para Firefox */
 * {
   scrollbar-color: rgba(216,79,29,255) black; /* Define a cor do polegar e do fundo da barra de rolagem */
+}
+
+/* Fontes para títulos e parágrafos */
+p {
+  font-family: 'Akhand Soft', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+}
+
+/* Exibir o botão back-to-top quando necessário */
+.show-back-to-top {
+  display: flex !important;
 }

@@ -94,18 +94,22 @@
   background-color: rgb(0, 0, 0);
   width: 100%;
   gap: 80px;
+  padding: 20px;
 }
 
 .hist-content-title2 {
   width: 200px;
   color: rgba(216,79,29,255);
   font-family: 'amsiprocond-ultra';
+  font-size: 1.5rem;
 }
 
 .hist-2-content {
-  width: 20%;
-  font-size: 1rem;
+  width: 25%;
+  font-size: 1.2rem;
+  text-align: justify;
   color: white;
+  line-height:  1.5;
 }
 
 /* Estilos para responsividade */

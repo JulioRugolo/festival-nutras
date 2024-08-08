@@ -3,6 +3,8 @@ import './CSS/HomePage.css';
 
 const HomePage = ({ onVideoLoaded }) => {
   const videoRef = useRef(null);
+  const videoLink = 'https://www.youtube.com/watch?v=H2jtXhL7ZGo';
+
 
   useEffect(() => {
     const handleLoadedData = () => {

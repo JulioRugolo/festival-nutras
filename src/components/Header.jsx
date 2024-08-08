@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import './Header.css'; // Importa o CSS específico para o Header
+import Swal from 'sweetalert2';
 
 const Header = ({ onNavigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +15,18 @@ const Header = ({ onNavigate }) => {
 
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
+  };
+
+  const handleScrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+    if (onNavigate) {
+      onNavigate('home');
+    }
   };
 
   useEffect(() => {
@@ -32,7 +45,7 @@ const Header = ({ onNavigate }) => {
         className="header-logo"
       />
       <nav className={`nav ${isMobile && isMenuOpen ? 'open' : ''}`}>
-        <a href="#" className='nav-button' onClick={() => onNavigate('home')}>HOME</a> {!isMobile && '|'}
+        <a href="#top" className='nav-button' onClick={handleScrollToTop}>HOME</a> {!isMobile && '|'}
         <a href="#edicoes" className='nav-button' onClick={() => onNavigate('edicoes')}>EDIÇÕES ANTERIORES</a>{!isMobile && '|'}
         <a href="#gastronomia" className='nav-button' onClick={() => onNavigate('gastronomia')}>GASTRONOMIA</a>{!isMobile && '|'}
         <a href="#atracoes" className='nav-button' onClick={() => onNavigate('atracoes')}>ATRAÇÕES</a>{!isMobile && '|'}

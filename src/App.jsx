@@ -16,6 +16,9 @@ import ContatoMobile from './pages/mobile/ContatoMobile';
 import BandaMobile from './pages/mobile/BandaMobile';
 import EdicoesMobile from './pages/mobile/EdicoesMobile';
 import festivalLogo from './assets/img/festival.png';
+import CTAContainer from './components/CTA/CTAContainer';
+import PatrocinadoresPage from './pages/PatrocinadoresPage';
+import Countdown from './components/Countdown/countdown';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -37,6 +40,10 @@ function App() {
 
   const handleVideoLoaded = () => {
     setLoading(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -63,16 +70,22 @@ function App() {
           <>
             <Header />
             <HomePage onVideoLoaded={handleVideoLoaded} />
-            <Space />
-            <Space />
+            <CTAContainer />
+            <Countdown />
             <EdicoesPage />
-            <Space />
             <Atracoes />
             <Space />
             <BandaPage />
+            <PatrocinadoresPage />
+            <CTAContainer />
             <Historia />
             <ContatoPage />
           </>
+        )}
+        {showBackToTop && (
+          <button className="back-to-top" onClick={scrollToTop}>
+            ↑
+          </button>
         )}
       </div>
     </>

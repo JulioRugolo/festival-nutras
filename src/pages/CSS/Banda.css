@@ -10,12 +10,17 @@
 }
 
 .banda-content-title {
-    text-align: center;
-    margin-bottom: 20px;
+    font-family: 'AmsiProCond-Ultra', sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: flex-ce;
+}
+
+.banda-content-title img {
+    width: 8%;
 }
 
 .banda-content-title h1 {
@@ -37,8 +42,8 @@
 }
 
 .banda-image {
-    width: 380px; /* Aumentado para 200px */
-    height: 380px; /* Aumentado para 200px */
+    width: 450px; /* Aumentado para 200px */
+    height: 450px; /* Aumentado para 200px */
     transform: rotate(45deg);
     overflow: hidden;
     margin: 0 auto;

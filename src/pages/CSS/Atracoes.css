@@ -1,25 +1,44 @@
 /* src/pages/CSS/Atracoes.css */
 .atracoes {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.64); /* Semitransparente para escurecer a imagem */
+  background-image: url('../../assets/img/hist/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken; /* Mistura o fundo com a cor */
+  width: 100%;
+  color: white;
+  height: calc(100vh - 80px); /* Ajuste conforme necessário para o cabeçalho */
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+  .atracoes-content-title{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    background-image: url('../../assets/img/hist/bg.png');
-    background-size: cover;
-    width: 100%;
-    padding: 80px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
     color: white;
+    font-size: 2.5rem;
+    font-family: 'amsiprocond-ultra';
+    margin-left: 100px;
   }
 
-  .atracoes-content-title {
+  .atracoes-content-title .title {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
     width: 100%;
     color: white;
     font-size: 2.5rem;
     font-family: 'amsiprocond-ultra';
+    margin-left: 100px;
   }
 
   .atracoes-content-title img {
@@ -40,6 +59,8 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-left: 100px;
+
   }
   
   .atracao-text {

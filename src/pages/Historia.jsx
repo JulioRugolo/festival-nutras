@@ -25,7 +25,6 @@ const Historia = () => {
           </p>
         </div>
       </div>
-      <Countdown />
       <div className='hist-2'>
         <div className='hist-content-title2'>
           <h1>Lugar onde 

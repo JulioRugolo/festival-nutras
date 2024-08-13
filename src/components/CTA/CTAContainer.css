@@ -24,13 +24,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff5e00;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 1.5rem;
     padding: 10px 20px;
     border-radius: 20px;
     margin-top: 20px;
     width: 320px;
     cursor: pointer;
+    border: unset;
+  }
+
+  .comprar-button:hover {
+    background-color: #ff5e00;
+    color: white;
+    border: unset;
+    box-shadow: 0 0 10px black;
   }
   

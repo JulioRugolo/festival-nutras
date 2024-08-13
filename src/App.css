@@ -141,7 +141,8 @@ p {
   font-family: 'Akhand Soft', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
+  display: flex;
   font-family: 'AmsiProCond-Ultra', sans-serif;
 }
 

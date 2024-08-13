@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// src/components/PhotoPopup/PhotoPopup.jsx
 import { useState, useEffect } from 'react';
 import './PhotoPopup.css';
 import logo from '../../assets/img/festival.png'; // Importe o logo
@@ -54,14 +53,13 @@ const PhotoPopup = ({ photo, onClose, onNext, onPrev }) => {
             src={photo}
             alt="Foto Ampliada"
             className='photo'
-            style={{ display: isLoading ? 'none' : 'block' }}
             onLoad={handleImageLoad}
+            style={{ display: isLoading ? 'none' : 'block' }}
           />
-          <img src={logo} alt="Logo" className='logo' style={{ display: isLoading ? 'none' : 'block' }} />
         </div>
-        <button onClick={onPrev} className='pop-up-button prev-button' style={{ display: isLoading ? 'none' : 'block' }}>&#8249;</button>
-        <button onClick={onNext} className='pop-up-button next-button' style={{ display: isLoading ? 'none' : 'block' }}>&#8250;</button>
-        <button onClick={handleDownload} className='download-button' style={{ display: isLoading ? 'none' : 'block' }}>Download</button>
+        <button onClick={onPrev} className='pop-up-button prev-button'>&#8249;</button>
+        <button onClick={onNext} className='pop-up-button next-button'>&#8250;</button>
+        <button onClick={handleDownload} className='download-button'>Download</button>
       </div>
     </div>
   );

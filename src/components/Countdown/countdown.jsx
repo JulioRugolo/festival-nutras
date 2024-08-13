@@ -1,6 +1,4 @@
-// src/components/Countdown.jsx
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Countdown.css';
 import fundoContagem from '../../assets/img/hist/FUNDO-CONTAGEM.png';
 
@@ -37,21 +35,24 @@ const Countdown = () => {
       className='counter-container'
       style={{ backgroundImage: `url(${fundoContagem})` }}
     >
-      <div className="countdown-item">
-        <span className="number">{timeLeft.days || '0'}</span>
-        <span className="label">DIAS</span>
-      </div>
-      <div className="countdown-item">
-        <span className="number">{timeLeft.hours || '0'}</span>
-        <span className="label">HORAS</span>
-      </div>
-      <div className="countdown-item">
-        <span className="number">{timeLeft.minutes || '0'}</span>
-        <span className="label">MINUTOS</span>
-      </div>
-      <div className="countdown-item">
-        <span className="number">{timeLeft.seconds || '0'}</span>
-        <span className="label">SEGUNDOS</span>
+      <div className="countdown-header">FALTAM APENAS</div>
+      <div className='countdown-container'>
+        <div className="countdown-item">
+          <span className="number">{timeLeft.days || '0'}</span>
+          <span className="label">DIAS</span>
+        </div>
+        <div className="countdown-item">
+          <span className="number">{timeLeft.hours || '0'}</span>
+          <span className="label">HORAS</span>
+        </div>
+        <div className="countdown-item">
+          <span className="number">{timeLeft.minutes || '0'}</span>
+          <span className="label">MINUTOS</span>
+        </div>
+        <div className="countdown-item">
+          <span className="number">{timeLeft.seconds || '0'}</span>
+          <span className="label">SEGUNDOS</span>
+        </div>
       </div>
     </div>
   );

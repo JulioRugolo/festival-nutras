@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import './Header.css'; // Importa o CSS específico para o Header
-import Swal from 'sweetalert2';
 
 const Header = ({ onNavigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +33,10 @@ const Header = ({ onNavigate }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const handleComprar = () => {
+    window.open('https://www.guicheweb.com.br/3-festival-de-churrasco-do-nutras_34053', '_blank');
+  }
+
   return (
     <header className="header">
       <button className="menu-toggle" onClick={toggleMenu}>
@@ -54,6 +57,7 @@ const Header = ({ onNavigate }) => {
         <a href="#historia" className='nav-button' onClick={() => onNavigate('historia')}>HISTÓRIA</a>{!isMobile && '|'}
         <a href="#contato" className='nav-button' onClick={() => onNavigate('contato')}>CONTATO</a>
       </nav>
+      <button onClick={handleComprar} className='cta-header'>Comprar ingresso</button>
     </header>
   );
 };

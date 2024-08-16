@@ -1,126 +1,245 @@
-/* src/pages/CSS/Atracoes.css */
 .atracoes {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0.64); /* Semitransparente para escurecer a imagem */
+  background-color: rgba(0, 0, 0, 0.64);
   background-image: url('../../assets/img/hist/bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: darken; /* Mistura o fundo com a cor */
+  background-blend-mode: darken;
   width: 100%;
   color: white;
-  height: calc(100vh - 80px); /* Ajuste conforme necessário para o cabeçalho */
-  padding-top: 80px;
-  padding-left: 80px;
-  padding-right: 80px;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
 }
 
-  .atracoes-content-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 50%;
-    color: white;
-    font-size: 2.5rem;
-    font-family: 'amsiprocond-ultra';
-    margin-left: 100px;
-  }
+.atracoes-content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'amsiprocond-ultra';
+  margin-bottom: 40px;
+}
 
-  .atracoes-content-title .title {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    width: 100%;
-    color: white;
-    font-size: 2.5rem;
-    font-family: 'amsiprocond-ultra';
-    margin-left: 100px;
-  }
+.atracoes-content-title .title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'amsiprocond-ultra';
+  margin-bottom: 20px;
+}
 
-  .atracoes-content-title img {
-    width: 10%;
-  }
-  
-  .atracoes-title {
+.elementos-title {
+  width: 2%;
+}
+
+.atracao-text {
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+}
+
+.atracao-item {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha separadora entre as seções */
+}
+
+.atracao-item:last-child {
+  border-bottom: none; /* Remove a linha da última seção */
+}
+
+.atracao-item h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'amsiprocond-ultra';
+  margin-bottom: 10px;
+  padding: 0 80px;
+}
+
+.atracao-item p {
+  font-size: 1.2rem;
+}
+
+.atracao-image-item {
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.atracao-image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banda-content {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo das bandas */
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que as bandas se ajustem em telas menores */
+}
+
+.banda-content img {
+  width: 80%;
+  height: 80%;
+}
+
+.kids img {
+  border-radius: 10%;
+  width: 50%;
+}
+
+/* Grid de pratos para a seção "DIVERSAS ESTAÇÕES" */
+.pratos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.prato-card {
+  background-color: #100c14;
+  border: 4px solid rgba(255, 140, 0, 0.4);
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prato-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  border: 4px solid #ff8c00;
+}
+
+.prato-foto {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.prato-card h3 {
+  font-size: 16px;
+  color: #ffcc99;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .atracoes-content-title {
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
   }
-  
-  .atracoes-title h1 {
-    font-size: 3rem;
-    font-family: 'amsiprocond-ultra';
-  }
-  
-  .atracoes-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-left: 100px;
 
+  .banda-content {
+    flex-direction: column;
   }
-  
-  .atracao-text {
-    flex: 1;
+
+  .banda-image {
+    width: 150px;
+    height: 150px;
   }
-  
-  .atracao-item {
-    margin-bottom: 20px;
-  }
-  
+
   .atracao-item h2 {
-    font-size: 2rem;
-    font-family: 'amsiprocond-ultra';
-    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
-  
+
   .atracao-item p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
-  .atracao-images {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+
+  .prato-card {
+    width: 150px;
   }
-  
-  .atracao-image-item {
-    width: 550px;
-    height: auto;
+
+  .prato-foto {
+    height: 120px;
   }
-  
-  .atracao-image-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+
+/* Estilos específicos para a seção "DIVERSAS ESTAÇÕES" */
+.diversas-estacoes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.diversas-estacoes-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #100c14;
+  border: 4px solid rgba(255, 140, 0, 0.4);
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diversas-estacoes-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  border: 4px solid #ff8c00;
+}
+
+.diversas-estacoes-foto {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.diversas-estacoes-card h3 {
+  font-size: 18px;
+  color: #ffcc99;
+  margin-top: 10px;
+}
+
+.diversas-estacoes-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsividade específica para a seção "DIVERSAS ESTAÇÕES" */
+@media (max-width: 768px) {
+  .diversas-estacoes-card {
+    width: 150px;
   }
-  
-  @media (max-width: 768px) {
-    .atracoes-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .atracao-text, .atracao-images {
-      width: 100%;
-    }
-    
-    .atracao-image-item {
-      width: 100px;
-      height: 100px;
-    }
-  
-    .atracao-item h2 {
-      font-size: 1.5rem;
-    }
-  
-    .atracao-item p {
-      font-size: 1rem;
-    }
+
+  .diversas-estacoes-foto {
+    height: 120px;
   }
-  
+
+  .diversas-estacoes-card h3 {
+    font-size: 16px;
+  }
+
+  .diversas-estacoes-card p {
+    font-size: 0.9rem;
+  }
+}

@@ -10,7 +10,6 @@ const HistoriaMobile = () => {
   return (
     <section id="historia" className="section-container-mobile section2-mobile">
       <div className='hist-container-mobile'>
-        <img className='hist-evento-mobile' src={imgSetor} alt="Setor" />
         <img className='logo-nutras-mobile' src={logoNutras} alt="Logo Nutras" />
         <div className='hist-content-mobile'>
           <div className='hist-content-title-mobile'>

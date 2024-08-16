@@ -9,16 +9,15 @@ import useDeviceDetect from './useDeviceDetect';
 import Space from './components/space/space';
 import EdicoesPage from './pages/EdiçõesPage';
 import Atracoes from './pages/AtracoesPage';
-import BandaPage from './pages/BandaPage';
 import ContatoPage from './pages/ContatoPage';
 import AtracoesMobile from './pages/mobile/AtracoesMobile';
 import ContatoMobile from './pages/mobile/ContatoMobile';
-import BandaMobile from './pages/mobile/BandaMobile';
 import EdicoesMobile from './pages/mobile/EdicoesMobile';
 import festivalLogo from './assets/img/festival.png';
 import CTAContainer from './components/CTA/CTAContainer';
 import PatrocinadoresPage from './pages/PatrocinadoresPage';
 import Countdown from './components/Countdown/countdown';
+import GastronomiaPage from './pages/GastronomiaPage';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -61,8 +60,8 @@ function App() {
             <Header />
             <HomePageMobile onVideoLoaded={handleVideoLoaded} />
             <EdicoesMobile />
+            <GastronomiaPage />
             <AtracoesMobile />
-            <BandaMobile />
             <HistoriaMobile />
             <ContatoMobile />
           </>
@@ -73,9 +72,9 @@ function App() {
             <CTAContainer />
             <Countdown />
             <EdicoesPage />
+            <GastronomiaPage />
             <Atracoes />
             <Space />
-            <BandaPage />
             <PatrocinadoresPage />
             <CTAContainer />
             <Historia />

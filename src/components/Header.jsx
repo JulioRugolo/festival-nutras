@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import './Header.css'; // Importa o CSS específico para o Header
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTicketAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ onNavigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,18 +16,6 @@ const Header = ({ onNavigate }) => {
 
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
-  };
-
-  const handleScrollToTop = (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    
-    if (isMobile) {
-      setIsMenuOpen(false);
-    }
-    if (onNavigate) {
-      onNavigate('home');
-    }
   };
 
   useEffect(() => {
@@ -48,7 +38,7 @@ const Header = ({ onNavigate }) => {
         className="header-logo"
       />
       <nav className={`nav ${isMobile && isMenuOpen ? 'open' : ''}`}>
-        <a href="#top" className='nav-button' onClick={handleScrollToTop}>HOME</a> {!isMobile && '|'}
+        <a href="#section1" className='nav-button' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>HOME</a> {!isMobile && '|'}
         <a href="#edicoes" className='nav-button' onClick={() => onNavigate('edicoes')}>EDIÇÕES ANTERIORES</a>{!isMobile && '|'}
         <a href="#gastronomia" className='nav-button' onClick={() => onNavigate('gastronomia')}>GASTRONOMIA</a>{!isMobile && '|'}
         <a href="#atracoes" className='nav-button' onClick={() => onNavigate('atracoes')}>ATRAÇÕES</a>{!isMobile && '|'}
@@ -56,7 +46,10 @@ const Header = ({ onNavigate }) => {
         <a href="#historia" className='nav-button' onClick={() => onNavigate('historia')}>HISTÓRIA</a>{!isMobile && '|'}
         <a href="#contato" className='nav-button' onClick={() => onNavigate('contato')}>CONTATO</a>
       </nav>
-      <button onClick={handleComprar} className='cta-header'>Comprar ingresso</button>
+      <button onClick={handleComprar} className='cta-header'>
+        <FontAwesomeIcon icon={faTicketAlt} className="ticket-icon" />
+        Comprar ingresso
+      </button>
     </header>
   );
 };

@@ -1,39 +1,29 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './CSS/HomePage.css';
 
 const HomePage = ({ onVideoLoaded }) => {
-  const videoRef = useRef(null);
-  const videoLink = 'https://www.youtube.com/watch?v=H2jtXhL7ZGo';
-
+  const videoLink = 'https://www.youtube.com/embed/H2jtXhL7ZGo?autoplay=1&mute=1';
 
   useEffect(() => {
-    const handleLoadedData = () => {
+    const iframe = document.getElementById('youtube-iframe');
+    iframe.onload = () => {
       if (onVideoLoaded) {
         onVideoLoaded();
       }
-    };
-
-    const videoElement = videoRef.current;
-    videoElement.addEventListener('loadeddata', handleLoadedData);
-
-    return () => {
-      videoElement.removeEventListener('loadeddata', handleLoadedData);
     };
   }, [onVideoLoaded]);
 
   return (
     <section id="section1" className="section1">
-      <video
-        ref={videoRef}
+      <iframe
+        id="youtube-iframe"
         className="background-video"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        <source src="./videos/vt_bg.mp4" type="video/mp4" />
-        Seu navegador não suporta o formato de vídeo.
-      </video>
+        src={videoLink}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
       <div className='overlay-home'></div>
     </section>
   );

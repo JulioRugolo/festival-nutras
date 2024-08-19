@@ -26,7 +26,7 @@
   left: -25%;
   width: 150%;
   height: 150%;
-  z-index: 0; /* Coloca o vídeo atrás dos outros elementos */
+  z-index: 900; /* Coloca o vídeo atrás dos outros elementos */
 }
 
 /* Overlay branco para suavizar o vídeo */

@@ -6,7 +6,7 @@ import logo from '../../assets/img/festival.png';
 
 const ContatoMobile = () => {
   return (
-    <footer className="contato-mobile">
+    <footer id='contato' className="contato-mobile">
       <div className="contato-logo-mobile">
         <img src={logo} alt="Festival de Churrasco do Nutras" />
       </div>

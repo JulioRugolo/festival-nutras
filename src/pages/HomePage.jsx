@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './CSS/HomePage.css';
 
 const HomePage = ({ onVideoLoaded }) => {
-  const videoLink = 'https://www.youtube.com/embed/H2jtXhL7ZGo?autoplay=1&mute=1';
+  const videoLink = 'https://www.youtube.com/embed/H2jtXhL7ZGo?autoplay=1&mute=1&rel=0';
 
   useEffect(() => {
     const iframe = document.getElementById('youtube-iframe');

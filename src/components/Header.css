@@ -146,7 +146,7 @@
 @media (max-width: 768px) {
   .header {
     position: fixed;
-    height: 80px; /* Ajuste a altura conforme necessário */
+    height: 90px; /* Ajuste a altura conforme necessário */
     justify-content: space-between;
   }
 
@@ -155,8 +155,8 @@
     flex-direction: column;
     position: absolute;
     justify-content: space-around;
-    top: 70px; /* Ajuste conforme necessário para o menu aparecer abaixo do cabeçalho */
-    height: 550px;
+    top: 90px; /* Ajuste conforme necessário para o menu aparecer abaixo do cabeçalho */
+    height: 500px;
     align-self: flex-start;
     background-color: black;
     padding-top: 90px;
@@ -176,16 +176,19 @@
 
   .nav a {
     color: #fff;
+    font-size: 1.2rem;
   }
 
   .header img {
     position: absolute;
-    top: 50%; /* Centraliza verticalmente a imagem */
+    top: 85%; /* Centraliza verticalmente a imagem */
     left: 10%;
     transform: translateY(-50%);
   }
 
   .cta-header {
     margin-right: 10px;
+    width: 150px;
+    height: 60px;
   }
 }

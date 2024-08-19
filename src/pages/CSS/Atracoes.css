@@ -50,6 +50,10 @@
 }
 
 .atracao-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 40px;
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha separadora entre as seções */
@@ -71,6 +75,8 @@
 
 .atracao-item p {
   font-size: 1.2rem;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
 .atracao-image-item {
@@ -99,7 +105,6 @@
 }
 
 .kids img {
-  border-radius: 10%;
   width: 50%;
 }
 
@@ -141,6 +146,13 @@
   font-size: 16px;
   color: #ffcc99;
   margin-top: 10px;
+}
+
+.atv-img {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /* Responsividade */

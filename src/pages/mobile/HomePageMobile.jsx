@@ -1,29 +1,38 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './CSS/HomePageMobile.css';
+import bg from '../../assets/videos/vt_bg2.mp4';
 
 const HomePageMobile = ({ onVideoLoaded }) => {
-  const videoLink = 'https://www.youtube.com/embed/H2jtXhL7ZGo?autoplay=1&mute=1';
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const iframe = document.getElementById('youtube-iframe-mobile');
-    iframe.onload = () => {
+    const handleLoadedData = () => {
       if (onVideoLoaded) {
         onVideoLoaded();
       }
+    };
+
+    const videoElement = videoRef.current;
+    videoElement.addEventListener('loadeddata', handleLoadedData);
+
+    return () => {
+      videoElement.removeEventListener('loadeddata', handleLoadedData);
     };
   }, [onVideoLoaded]);
 
   return (
     <section id="section1" className="home-page-mobile">
-      <iframe
-        id="youtube-iframe-mobile"
-        className="background-video-mobile"
-        src={videoLink}
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      <div className="video-container">
+        <video
+          ref={videoRef}
+          src={bg}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="background-video-mobile"
+        ></video>
+      </div>
       <div className='overlay-home-mobile'></div>
     </section>
   );

@@ -10,7 +10,7 @@ const PopupTicket = () => {
       // Função para mostrar o popup a cada 30 segundos
       const interval = setInterval(() => {
         setIsVisible(true);
-      }, 30000); // 30 segundos
+      }, 1000); // 30 segundos
   
       return () => clearInterval(interval);
     }, []);

@@ -18,8 +18,6 @@ import CTAContainer from './components/CTA/CTAContainer';
 import PatrocinadoresPage from './pages/PatrocinadoresPage';
 import Countdown from './components/Countdown/countdown';
 import GastronomiaPage from './pages/GastronomiaPage';
-import Popup from './components/buy-ticket/Popup';
-import PopupTicket from './components/buy-ticket/Popup';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -66,7 +64,6 @@ function App() {
             <AtracoesMobile />
             <HistoriaMobile />
             <ContatoMobile />
-            {/* <PopupTicket /> */}
           </>
         ) : (
           <>
@@ -82,7 +79,6 @@ function App() {
             <CTAContainer />
             <Historia />
             <ContatoPage />
-            {/* <PopupTicket /> */}
           </>
         )}
         {showBackToTop && (

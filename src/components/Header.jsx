@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import './Header.css'; // Importa o CSS específico para o Header
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTicketAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTicketAlt, faTicket } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ onNavigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,7 +57,7 @@ const Header = ({ onNavigate }) => {
         <a href="#contato" className='nav-button' onClick={() => handleNavbarClick('contato')}>CONTATO</a>
       </nav>
       <button onClick={handleComprar} className='cta-header'>
-        <FontAwesomeIcon icon={faTicketAlt} className="ticket-icon" />
+        <FontAwesomeIcon icon={faTicket} className="ticket-icon" />
         Comprar ingresso
       </button>
     </header>

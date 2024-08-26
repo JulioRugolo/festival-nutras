@@ -1,7 +1,5 @@
 import './CSS/Atracoes.css';
 import banda1 from '../assets/img/bandas/bandas.png';
-import garfo from '../assets/img/elementos/01-garfo.png';
-import faca from '../assets/img/elementos/02-faca.png';
 import carro from '../assets/img/atracoes/carros.jpg';
 import kids from '../assets/img/atracoes/espaco-kids.JPG';
 import Title from '../components/title/Title';

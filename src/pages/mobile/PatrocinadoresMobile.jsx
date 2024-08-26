@@ -19,7 +19,8 @@ const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
 const PatrocinadoresMobile = () => {
   return (
     <div id='patrocinadores' className="patrocinadores-page-mobile" style={{ backgroundImage: `url(${bgImage})` }}>
-      <TitleMobile title='Patrocinadores' color='white' />
+      <TitleMobile title='Patrocinadores' color='white' className="title-mobile-patrocinadores" />
+
       <div className="patrocinadores-container-mobile">
         {logos.map((logo, index) => (
           <div

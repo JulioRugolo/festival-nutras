@@ -1,6 +1,8 @@
 // src/pages/mobile/AtracoesMobile.jsx
 import './CSS/AtracoesMobile.css';
-import banda1 from '../../assets/img/bandas/bandas.png';
+import banda1 from '../../assets/img/atracoes/banda--01.png'; // Atualize o caminho das imagens das bandas
+import banda2 from '../../assets/img/atracoes/banda--02.png'; 
+import banda3 from '../../assets/img/atracoes/banda--03.png'; 
 import kids from '../../assets/img/atracoes/espaco-kids.JPG';
 import carro from '../../assets/img/atracoes/carros.jpg';
 import TitleMobile from './../../components/title/TitleMobile';
@@ -11,18 +13,24 @@ const AtracoesMobile = () => {
       <TitleMobile title='Atrações' color="white"/>
       <div className='atracoes-content-mobile'>
         <div className='atracao-item-mobile'>
-          <h2>SHOWS DE MÚSICA</h2>
+          <h2>4 NO SERTÃO</h2>
           <p>Samba, Rock, Country e Sertanejo.</p>
-          <img src={banda1} alt="Shows de Música" className='atv-img-mobile' />
+          <img src={banda1} alt="Banda 1" className='atv-img-mobile' />
+        </div>
+        <div className='atracao-item-mobile'>
+          <h2>RED FOX</h2>
+          <p>Samba, Rock, Country e Sertanejo.</p>
+          <img src={banda2} alt="Banda 2" className='atv-img-mobile' />
+        </div>
+        <div className='atracao-item-mobile'>
+          <h2>LUCAS PRADO</h2>
+          <p>Samba, Rock, Country e Sertanejo.</p>
+          <img src={banda3} alt="Banda 3" className='atv-img-mobile' />
         </div>
         <div className='atracao-item-mobile'>
           <h2>ESPAÇO KIDS</h2>
           <p>Um espaço dedicado às crianças, com brinquedos e muita diversão.</p>
           <img src={kids} alt="Espaço Kids" className='atv-img-mobile' />
-        </div>
-        <div className='atracao-item-mobile'>
-          <h2>SORTEIOS DE BRINDES</h2>
-          <p>Muitos sorteios de brindes durante todo o evento.</p>
         </div>
         <div className='atracao-item-mobile'>
           <h2>EXPOSIÇÃO DE CARROS ESPORTIVOS</h2>

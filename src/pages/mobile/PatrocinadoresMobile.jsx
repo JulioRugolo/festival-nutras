@@ -12,9 +12,12 @@ import logo6 from '../../assets/img/patrocinio/logo-06.png';
 import logo7 from '../../assets/img/patrocinio/logo-07.png';
 import logo8 from '../../assets/img/patrocinio/logo-08.png';
 import logo9 from '../../assets/img/patrocinio/logo-09.png';
+import apoio01 from '../../assets/img/patrocinio/apoio01.png';
+import apoio02 from '../../assets/img/patrocinio/apoio02.png';
 import TitleMobile from './../../components/title/TitleMobile';
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
+const apoios = [apoio01, apoio02];
 
 const PatrocinadoresMobile = () => {
   return (
@@ -26,6 +29,19 @@ const PatrocinadoresMobile = () => {
           <div
             key={index}
             className="patrocinador-box-mobile"
+          >
+            <img src={logo} alt={`Logo ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+
+      <TitleMobile title='Realização' color='white' className="title-mobile-patrocinadores" />
+
+      <div className="patrocinadores-container-mobile">
+        {apoios.map((logo, index) => (
+          <div
+            key={index}
+            className="patrocinador-box-mobile apoio-mobile"
           >
             <img src={logo} alt={`Logo ${index + 1}`} />
           </div>

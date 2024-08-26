@@ -11,10 +11,13 @@ import logo6 from '../assets/img/patrocinio/logo-06.png';
 import logo7 from '../assets/img/patrocinio/logo-07.png';
 import logo8 from '../assets/img/patrocinio/logo-08.png';
 import logo9 from '../assets/img/patrocinio/logo-09.png';
+import apoio01 from '../assets/img/patrocinio/apoio01.png';
+import apoio02 from '../assets/img/patrocinio/apoio02.png';
 import Title from './../components/title/Title';
 // Continue para todos os logos
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
+const apoios = [apoio01, apoio02];
 
 const PatrocinadoresPage = () => {
   return (
@@ -30,21 +33,17 @@ const PatrocinadoresPage = () => {
           </div>
         ))}
       </div>
-      {/* <div className='title'>
-          <img src={garfo} alt="Garfo" />
-          <h1>APOIO</h1>
-          <img src={faca} alt="Faca" />
-        </div>
-      <div className="apoio-container">
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-        <div className="apoio-box"></div>
-      </div> */}
+      <Title title='Realização' color='white' />
+      <div className="patrocinadores-container">
+        {apoios.map((logo, index) => (
+          <div
+            key={index}
+            className="patrocinador-box apoio"
+          >
+            <img src={logo} alt={`Logo ${index + 1}`} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

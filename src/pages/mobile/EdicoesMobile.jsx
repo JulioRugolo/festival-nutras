@@ -1,8 +1,6 @@
 // src/pages/mobile/EdicoesMobile.jsx
 import { useState } from 'react';
 import './CSS/EdicoesMobile.css';
-import garfo from '../../assets/img/elementos/01-garfo.png';
-import faca from '../../assets/img/elementos/02-faca.png';
 import Galeria from '../../components/Galeria/GaleriaMobile';
 import PhotoPopup from '../../components/PhotoPopup/PhotoPopup';
 
@@ -75,6 +73,7 @@ import photo2023_large_18 from '../../assets/img/edicoes/2023/2023 (18).JPG';
 import photo2023_large_19 from '../../assets/img/edicoes/2023/2023 (19).JPG';
 import photo2023_large_20 from '../../assets/img/edicoes/2023/2023 (20).JPG';
 import photo2023_large_21 from '../../assets/img/edicoes/2023/2023 (21).JPG';
+import TitleMobile from '../../components/title/TitleMobile';
 
 const photos2022Small = [
   photo2022_small_1,
@@ -188,11 +187,7 @@ const EdicoesMobile = () => {
 
   return (
     <section id='edicoes' className='section-container-mobile edicoes-mobile'>
-      <div className='edicoes-content-title-mobile'>
-        <img src={garfo} alt="Garfo" />
-        <h1>EDIÇÕES ANTERIORES</h1>
-        <img src={faca} alt="Faca" />
-      </div>
+      <TitleMobile title='Edições' color='white' />
       <div className='edicoes-anos-mobile'>
         <h2
           onClick={() => handleYearClick('2022')}

@@ -1,22 +1,7 @@
 import './CSS/Gastronomia.css';
-import mendoncasLogo from '../assets/img/gastronomia/COSTELA FOGO DE CHÃO - MENDONÇAS BBQ.jpeg';
-import peDePeixeLogo from '../assets/img/gastronomia/ESPETO DE TILÁPIA COM LEGUMES - PÉ DE PEIXE.jpeg';
-import santoBeefLogo from '../assets/img/gastronomia/PICANHA COM CHIMICHURRI E FAROFA - SANTO BEEF.png';
-import garfo from '../assets/img/elementos/01-garfo.png';
-import faca from '../assets/img/elementos/02-faca.png';
 
-// Importação das fotos dos cozinheiros
-import juniorCuryFoto from '../assets/img/cozinheiros/BIFE ANCHO COM ARROZ BIRO BIRO - JUNIOR CURY.jpeg';
-import marceloFoto from '../assets/img/cozinheiros/BIFE ANCHO COM ARROZ BIRO BIRO - MARCELO.jpeg';
-import moscaMonteiroFoto from '../assets/img/cozinheiros/BIFE ANCHO COM ARROZ BIRO BIRO - MOSCA E MONTEIRO.jpeg';
-import joaoAriMancimFoto from '../assets/img/cozinheiros/CHURRASCO CAIPIRA - JOÃO - ARI E MANCIM.jpg';
-import maiconGentilFoto from '../assets/img/cozinheiros/CHURRASCO CAIPIRA - MAICON E GENTIL.jpeg';
-import nicolasGaunaFoto from '../assets/img/cozinheiros/CORDEIRO FOGO DE CHÃO - NICOLAS GAUNA.jpeg';
-import williamBiazonFoto from '../assets/img/cozinheiros/CORDEIRO FOGO DE CHÃO - WILLIAM BIAZON.jpeg';
-import andersonGuilhermeFoto from '../assets/img/cozinheiros/COSTELINHA BARBECUE E BATATA FRITA - ANDERSON E GUILHERME BOLOGNESI.jpeg';
-import joseAntonioFoto from '../assets/img/cozinheiros/COSTELINHA BARBECUE E BATATA FRITA - JOSE ANTONIO.jpeg';
-import sabrinaFoto from '../assets/img/cozinheiros/COSTELINHA BARBECUE E BATATA FRITA - SABRINA.jpeg';
 // Continue importando as outras fotos
+import Title from './../components/title/Title';
 
 const pratos = [
   {
@@ -100,11 +85,7 @@ const pratos = [
 const GastronomiaPage = () => {
   return (
     <div id='gastronomia' className="gastronomia-page">
-      <div className='title'>
-        <img src={garfo} alt="Garfo" />
-        <h1>GASTRONOMIA</h1>
-        <img src={faca} alt="Faca" />
-      </div>
+      <Title title="Gastronomia" color="white" />
       <div className="pratos-container">
         {pratos.map((prato, index) => (
           <div key={index} className="prato-box">

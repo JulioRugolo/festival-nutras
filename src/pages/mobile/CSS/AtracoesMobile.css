@@ -2,6 +2,7 @@
   background-color: black;
   color: white;
   padding: 20px;
+  min-height: 100vh; /* Garante que a seção ocupe pelo menos a altura total da tela */
 }
 
 .title-mobile {
@@ -9,6 +10,7 @@
   font-size: 2rem;
   margin-bottom: 20px;
   font-family: 'amsiprocond-ultra';
+  color: #ff8c00; /* Adiciona uma cor destaque ao título */
 }
 
 .atracoes-content-mobile {
@@ -19,21 +21,29 @@
 
 .atracao-item-mobile {
   text-align: center;
+  background-color: #1c1c1c; /* Fundo para destacar cada item */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .atracao-item-mobile img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 10px; /* Espaço abaixo da imagem */
+  object-fit: cover;
 }
 
 .atracao-item-mobile h2 {
   font-size: 1.5rem;
   font-family: 'amsiprocond-ultra';
   margin: 10px 0;
+  color: #ff8c00; /* Cor destacada para o título */
 }
 
 .atracao-item-mobile p {
   font-size: 1rem;
+  color: #ccc; /* Cor suavizada para o texto */
 }
 
 /* Grid de categorias para a seção "DIVERSAS ESTAÇÕES" */
@@ -70,6 +80,10 @@
   transition: filter 0.3s ease;
 }
 
+.diversas-estacoes-foto-mobile:hover {
+  filter: brightness(1.1); /* Leve aumento de brilho ao passar o mouse */
+}
+
 .diversas-estacoes-card-mobile h3 {
   font-size: 14px;
   color: #ffcc99;
@@ -79,4 +93,5 @@
 .diversas-estacoes-card-mobile p {
   font-size: 0.9rem;
   color: #ccc;
+  margin-top: 5px; /* Pequeno espaçamento entre o título e o texto */
 }

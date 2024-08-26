@@ -1,0 +1,30 @@
+.title-container-component-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px
+  }
+  
+  .title-container-component-mobile .title-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem; /* Tamanho de fonte reduzido para mobile */
+    font-family: 'amsiprocond-ultra';
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    gap: 10px;
+  }
+  
+  .garfo-title-mobile, .faca-title-mobile {
+    margin-top: 5px;
+    width: 15%; /* Aumentar as imagens um pouco para mobile */
+  }
+  
+  .faca-title-mobile {
+    margin-top: 6px;
+  }
+  

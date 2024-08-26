@@ -1,12 +1,10 @@
-import Countdown from '../components/Countdown/countdown';
 import './CSS/Historia.css';
 
 // Importando as imagens
 import bgSection from '../assets/img/hist/bg_section.png';
 import imgSetor from '../assets/img/hist/Imagem_setor.png';
 import logoNutras from '../assets/img/hist/logo_nutras.png';
-import garfo from '../assets/img/elementos/01-garfo.png';
-import faca from '../assets/img/elementos/02-faca.png';
+import Title from '../components/title/Title';
 
 const Historia = () => {
   return (
@@ -15,11 +13,7 @@ const Historia = () => {
         <img className='hist-evento' src={imgSetor} alt="Setor" />
         <img className='logo-nutras' src={logoNutras} alt="Logo Nutras" />
         <div className='hist-content'>
-          <div className='hist-content-title'>
-            <img src={garfo} alt="Garfo" />
-            <h1>A História</h1>
-            <img src={faca} alt="Faca" />
-          </div>
+        <Title title="Atrações" color="#d84f1d" />
           <p>
             O Festival de Churrasco do Nutras teve sua primeira edição realizada em 2022 com o objetivo de angariar fundos para a manutenção do projeto Nutras, que atende atualmente mais de 400 crianças e adolescentes na faixa etária de 04 a 14 anos no contraturno escolar. O Projeto visa promover a inclusão social das crianças e adolescentes através da disseminação do conhecimento e da informação, de modo a capacitá-las e conscientizá-las sobre sua responsabilidade como protagonistas capazes de intervir na sua realidade pessoal e social, permitindo enxergar oportunidades de transformação.
           </p>

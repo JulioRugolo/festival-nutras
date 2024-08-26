@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import './CSS/Edicoes.css';
-import garfo from '../assets/img/elementos/01-garfo.png';
-import faca from '../assets/img/elementos/02-faca.png';
 import Galeria from '../components/Galeria/Galeria';
 import PhotoPopup from '../components/PhotoPopup/PhotoPopup';
 import { importImages } from '../utils/importImages';
+import Title from '../components/title/Title';
 
 const EdicoesPage = () => {
   const [selectedYear, setSelectedYear] = useState('2022');
@@ -65,11 +64,7 @@ const EdicoesPage = () => {
 
   return (
     <section id='edicoes' className='section-container edicoes'>
-      <div className='edicoes-content-title'>
-        <img src={garfo} alt="Garfo" />
-        <h1>EDIÇÕES ANTERIORES</h1>
-        <img src={faca} alt="Faca" />
-      </div>
+      <Title title='EdiçÕes Anteriores' color='white' />
       <div className='edicoes-anos'>
         <h2
           onClick={() => handleYearClick('2022')}

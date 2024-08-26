@@ -2,11 +2,11 @@
 import { useState, useEffect } from 'react';
 import './Header.css'; // Importa o CSS específico para o Header
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTicketAlt, faTicket } from '@fortawesome/free-solid-svg-icons';
+import { faTicket } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ onNavigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Assume que a largura máxima para mobile é 768px
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const toggleMenu = () => {
     if (isMobile) {
@@ -49,10 +49,10 @@ const Header = ({ onNavigate }) => {
       />
       <nav className={`nav ${isMobile && isMenuOpen ? 'open' : ''}`}>
         <a href="#section1" className='nav-button' onClick={() => handleNavbarClick('home')}>HOME</a> {!isMobile && '|'}
-        <a href="#edicoes" className='nav-button' onClick={() => handleNavbarClick('edicoes')}>EDIÇÕES ANTERIORES</a>{!isMobile && '|'}
         <a href="#gastronomia" className='nav-button' onClick={() => handleNavbarClick('gastronomia')}>GASTRONOMIA</a>{!isMobile && '|'}
         <a href="#atracoes" className='nav-button' onClick={() => handleNavbarClick('atracoes')}>ATRAÇÕES</a>{!isMobile && '|'}
         <a href="#patrocinadores" className='nav-button' onClick={() => handleNavbarClick('patrocinadores')}>PATROCINADORES</a>{!isMobile && '|'}
+        <a href="#edicoes" className='nav-button' onClick={() => handleNavbarClick('edicoes')}>EDIÇÕES ANTERIORES</a>{!isMobile && '|'}
         <a href="#historia" className='nav-button' onClick={() => handleNavbarClick('historia')}>HISTÓRIA</a>{!isMobile && '|'}
         <a href="#contato" className='nav-button' onClick={() => handleNavbarClick('contato')}>CONTATO</a>
       </nav>

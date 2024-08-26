@@ -1,0 +1,27 @@
+.title-container-component {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container-component .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'amsiprocond-ultra';
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.garfo-title, .faca-title {
+  margin-top: 8px;
+  width: 8%;
+}
+
+.faca-title {
+  margin-top: 10px;
+}

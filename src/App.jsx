@@ -1,23 +1,9 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Header from './components/Header';
-import HomePage from './pages/HomePage';
-import Historia from './pages/Historia';
-import HomePageMobile from './pages/mobile/HomePageMobile';
-import HistoriaMobile from './pages/mobile/HistoriaMobile';
 import useDeviceDetect from './useDeviceDetect';
-import Space from './components/space/space';
-import EdicoesPage from './pages/EdiçõesPage';
-import Atracoes from './pages/AtracoesPage';
-import ContatoPage from './pages/ContatoPage';
-import AtracoesMobile from './pages/mobile/AtracoesMobile';
-import ContatoMobile from './pages/mobile/ContatoMobile';
-import EdicoesMobile from './pages/mobile/EdicoesMobile';
 import festivalLogo from './assets/img/festival.png';
-import CTAContainer from './components/CTA/CTAContainer';
-import PatrocinadoresPage from './pages/PatrocinadoresPage';
-import Countdown from './components/Countdown/countdown';
-import GastronomiaPage from './pages/GastronomiaPage';
+import Mobile from './AppMobile';
+import Desktop from './AppDesktop';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -26,11 +12,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowBackToTop(true);
-      } else {
-        setShowBackToTop(false);
-      }
+      setShowBackToTop(window.scrollY > 300);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -56,30 +38,9 @@ function App() {
       )}
       <div className={loading ? 'hidden' : ''}>
         {isMobile ? (
-          <>
-            <Header />
-            <HomePageMobile onVideoLoaded={handleVideoLoaded} />
-            <EdicoesMobile />
-            <GastronomiaPage />
-            <AtracoesMobile />
-            <HistoriaMobile />
-            <ContatoMobile />
-          </>
+          <Mobile onVideoLoaded={handleVideoLoaded} />
         ) : (
-          <>
-            <Header />
-            <HomePage onVideoLoaded={handleVideoLoaded} />
-            <CTAContainer />
-            <Countdown />
-            <EdicoesPage />
-            <GastronomiaPage />
-            <Atracoes />
-            <Space />
-            <PatrocinadoresPage />
-            <CTAContainer />
-            <Historia />
-            <ContatoPage />
-          </>
+          <Desktop onVideoLoaded={handleVideoLoaded} />
         )}
         {showBackToTop && (
           <button className="back-to-top" onClick={scrollToTop}>

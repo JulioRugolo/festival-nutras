@@ -10,12 +10,14 @@ import EdicoesPage from './pages/EdiçõesPage';
 import Space from './components/space/space';
 import Historia from './pages/Historia';
 import ContatoPage from './pages/ContatoPage';
+import BannerGallery from './components/banner/BannerGallery';
 
 const Desktop = ({ onVideoLoaded }) => {
   return (
     <>
       <Header />
       <HomePage onVideoLoaded={onVideoLoaded} />
+      <BannerGallery />
       <CTAContainer />
       <Countdown />
       <GastronomiaPage />

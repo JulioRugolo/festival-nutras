@@ -43,7 +43,7 @@ const Atracoes = () => {
         </div>
 
         <div className='atracao-item'> {/* Exposição de ATV */}
-          <h2>EXPOSIÇÃO DE ATV</h2>
+          <h2>EXPOSIÇÃO DE UTV</h2>
           <p>Explore nossa exposição de UTVs, apresentando uma variedade de modelos robustos e preparados para qualquer aventura, perfeitos para os amantes de adrenalina.</p>
           <img src='https://can-am.brp.com/content/can-am-off-road/pt_br/isto-e-can-am/bananalama-2022/_jcr_content/root/heroblock_copy_copy_.coreimg.jpeg/1704810296411/brp-canam-bananalama-landing-page-hero-block-2-ptbr.jpeg?imwidth=2048' alt="ATV" className='atv-img' />
         </div>

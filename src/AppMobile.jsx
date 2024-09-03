@@ -8,12 +8,14 @@ import PatrocinadoresMobile from './pages/mobile/PatrocinadoresMobile';
 import EdicoesMobile from './pages/mobile/EdicoesMobile';
 import HistoriaMobile from './pages/mobile/HistoriaMobile';
 import ContatoMobile from './pages/mobile/ContatoMobile';
+import BannerGallery from './components/banner/BannerGallery';
 
 const Mobile = ({ onVideoLoaded }) => {
   return (
     <>
       <Header />
       <HomePageMobile onVideoLoaded={onVideoLoaded} />
+      <BannerGallery />
       <GastronomiaPageMobile />
       <AtracoesMobile />
       <PatrocinadoresMobile />

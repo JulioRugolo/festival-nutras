@@ -17,7 +17,6 @@ const Desktop = ({ onVideoLoaded }) => {
     <>
       <Header />
       <HomePage onVideoLoaded={onVideoLoaded} />
-      <BannerGallery />
       <CTAContainer />
       <Countdown />
       <GastronomiaPage />

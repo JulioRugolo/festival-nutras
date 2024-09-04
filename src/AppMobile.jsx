@@ -15,7 +15,6 @@ const Mobile = ({ onVideoLoaded }) => {
     <>
       <Header />
       <HomePageMobile onVideoLoaded={onVideoLoaded} />
-      <BannerGallery />
       <GastronomiaPageMobile />
       <AtracoesMobile />
       <PatrocinadoresMobile />

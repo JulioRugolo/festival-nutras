@@ -7,7 +7,7 @@ const VerVisitantes = () => {
 
   useEffect(() => {
     // Fazer a requisição para buscar os visitantes
-    axios.get('http://192.168.0.188:3001/ver-visitantes')
+    axios.get('https://festival-nutras-production.up.railway.app:3001/ver-visitantes')
       .then((response) => {
         setVisitantes(response.data);
       })

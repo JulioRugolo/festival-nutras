@@ -27,7 +27,7 @@ const Cadastro = () => {
     
 
     try {
-      const response = await axios.post('http://192.168.0.188:3001/cadastro', {
+      const response = await axios.post('https://festival-nutras-production.up.railway.app:3001/cadastro', {
         ...formData,
         dataNascimento,
       });

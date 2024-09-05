@@ -11,7 +11,7 @@ const Sorteio = () => {
 
   const fetchVisitors = async () => {
     try {
-      const response = await axios.get('http://192.168.0.188:3001/ver-visitantes');
+      const response = await axios.get('https://festival-nutras-production.up.railway.app:3001/ver-visitantes');
       const visitorsData = response.data;
       setVisitors(visitorsData);
     } catch (error) {

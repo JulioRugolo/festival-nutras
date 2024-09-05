@@ -1,0 +1,92 @@
+.sorteio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #1b1b1b;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 48px; /* Aumentei o tamanho da fonte para grande visibilidade */
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .sorteio-button {
+    padding: 20px 50px;
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 50%;
+  }
+  
+  .sorteio-button:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .loading-animation {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    animation: pulse 1.5s infinite;
+    letter-spacing: 2px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      color: #ff6600;
+    }
+    50% {
+      transform: scale(1.1);
+      color: #ffffff;
+    }
+    100% {
+      transform: scale(1);
+      color: #ff6600;
+    }
+  }
+  
+  /* Animação de confete quando o vencedor for sorteado */
+  @keyframes confetti {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  /* Responsividade para diferentes tamanhos de tela */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    .sorteio-button {
+      padding: 15px 40px;
+      font-size: 22px;
+    }
+  
+    .loading-animation {
+      font-size: 28px;
+    }
+  }
+  

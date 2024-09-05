@@ -62,8 +62,8 @@ function App() {
           }
         />
         {/* Rota para a página de cadastro de visitantes */}
-        <Route path="/cadastro-visitantes" element={<Cadastro />} />
-        <Route path="/ver-visitantes" element={<VerVisitantes />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/visitantes" element={<VerVisitantes />} />
         <Route path="/sorteio" element={<Sorteio />} />
       </Routes>
     </Router>

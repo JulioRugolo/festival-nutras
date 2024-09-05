@@ -42,7 +42,7 @@ app.post('/cadastro', async (req, res) => {
     const { nome, dataNascimento, telefone } = req.body;
 
     const id = await getNextId();
-    const dataHora = new Date().toLocaleString(); 
+    const dataHora = new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }); // Fuso horário de Brasília
     const novoVisitante = new Visitante({ id, nome, dataNascimento, telefone, dataHora });
 
     await novoVisitante.save();
@@ -52,6 +52,7 @@ app.post('/cadastro', async (req, res) => {
     res.status(500).json({ message: 'Erro ao salvar o cadastro.' });
   }
 });
+
 
 // Endpoint para ver visitantes
 app.get('/ver-visitantes', async (req, res) => {

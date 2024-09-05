@@ -2,14 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+require('dotenv').config(); // Carrega as variáveis de ambiente
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; // Usa a variável de ambiente ou o valor padrão
 
 app.use(cors());
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://oea:1csFkn5qUsl1rqTu@cameras.1t4bhkb.mongodb.net/?retryWrites=true&w=majority&appName=cameras', {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

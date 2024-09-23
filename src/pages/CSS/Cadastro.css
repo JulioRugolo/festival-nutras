@@ -4,17 +4,7 @@
     padding: 0;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px; /* Evita zoom no input */
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+
   
   .cadastro-container {
     display: flex;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import './CSS/Sorteio.css';
+
 
 const Sorteio = () => {
   const [visitors, setVisitors] = useState([]);

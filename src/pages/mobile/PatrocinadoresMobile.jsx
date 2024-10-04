@@ -64,18 +64,6 @@ import logo58 from '../../assets/img/patrocinio/logo-58.png';
 import logo59 from '../../assets/img/patrocinio/logo-59.png';
 import logo60 from '../../assets/img/patrocinio/logo-60.png';
 import logo61 from '../../assets/img/patrocinio/logo-61.png';
-import logo80 from '../../assets/img/patrocinio/logo-80.png';
-import logo81 from '../../assets/img/patrocinio/logo-81.png';
-import logo82 from '../../assets/img/patrocinio/logo-82.png';
-import logo83 from '../../assets/img/patrocinio/logo-83.png';
-import logo84 from '../../assets/img/patrocinio/logo-84.png';
-import logo85 from '../../assets/img/patrocinio/logo-85.png';
-import logo86 from '../../assets/img/patrocinio/logo-86.png';
-import logo87 from '../../assets/img/patrocinio/logo-87.png';
-import logo88 from '../../assets/img/patrocinio/logo-88.png';
-import logo89 from '../../assets/img/patrocinio/logo-89.png';
-import logo90 from '../../assets/img/patrocinio/logo-90.png';
-import logo91 from '../../assets/img/patrocinio/logo-91.png';
 import logo92 from '../../assets/img/patrocinio/logo-92.jpg';
 import logo93 from '../../assets/img/patrocinio/logo-93.jpg';
 import logo94 from '../../assets/img/patrocinio/logo-94.jpg';
@@ -92,7 +80,7 @@ import apoio02 from '../../assets/img/patrocinio/apoio02.png';
 import TitleMobile from './../../components/title/TitleMobile';
 // Continue para todos os logos
 
-const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo21, logo22, logo23, logo24, logo25, logo26, logo27, logo28, logo29, logo30, logo31, logo32, logo33, logo34, logo35, logo36, logo37, logo38, logo39, logo40, logo41, logo42, logo43, logo44, logo45, logo46, logo47, logo48, logo49, logo50, logo51, logo52, logo53, logo54, logo55, logo56, logo57, logo58, logo59, logo60, logo61, logo80, logo81, logo82, logo83, logo84, logo85, logo86, logo87, logo88, logo89, logo90, logo91, logo92, logo93, logo94, logo95, logo96, logo97, logo98, logo99, logo100, logo101
+const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo21, logo22, logo23, logo24, logo25, logo26, logo27, logo28, logo29, logo30, logo31, logo32, logo33, logo34, logo35, logo36, logo37, logo38, logo39, logo40, logo41, logo42, logo43, logo44, logo45, logo46, logo47, logo48, logo49, logo50, logo51, logo52, logo53, logo54, logo55, logo56, logo57, logo58, logo59, logo60, logo61, logo92, logo93, logo94, logo95, logo96, logo97, logo98, logo99, logo100, logo101
 ];
 const apoios = [apoio01, apoio02];
 

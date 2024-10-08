@@ -1,115 +1,14 @@
 import './CSS/Patrocinadores.css';
 import bgImage from '../assets/img/hist/bg.png';
-
-// Importando os logos dos patrocinadores
-import logo1 from '../assets/img/patrocinio/logo-01.jpg';
-import logo2 from '../assets/img/patrocinio/logo-02.png';
-import logo3 from '../assets/img/patrocinio/logo-03.jpg';
-import logo4 from '../assets/img/patrocinio/logo-04.jpg';
-import logo5 from '../assets/img/patrocinio/logo-05.jpg';
-import logo6 from '../assets/img/patrocinio/logo-06.jpg';
-import logo7 from '../assets/img/patrocinio/logo-07.jpg';
-import logo8 from '../assets/img/patrocinio/logo-08.jpg';
-import logo9 from '../assets/img/patrocinio/logo-09.jpg';
-import logo10 from '../assets/img/patrocinio/logo-10.jpg';
-import logo11 from '../assets/img/patrocinio/logo-11.jpg';
-import logo12 from '../assets/img/patrocinio/logo-12.jpg';
-import logo13 from '../assets/img/patrocinio/logo-13.jpg';
-import logo14 from '../assets/img/patrocinio/logo-14.jpg';
-import logo15 from '../assets/img/patrocinio/logo-15.jpg';
-import logo16 from '../assets/img/patrocinio/logo-16.jpg';
-import logo17 from '../assets/img/patrocinio/logo-17.jpg';
-import logo18 from '../assets/img/patrocinio/logo-18.jpg';
-import logo19 from '../assets/img/patrocinio/logo-19.jpg';
-import logo20 from '../assets/img/patrocinio/logo-20.jpg';
-import logo21 from '../assets/img/patrocinio/logo-21.jpg';
-import logo22 from '../assets/img/patrocinio/logo-22.jpg';
-import logo23 from '../assets/img/patrocinio/logo-23.jpg';
-import logo24 from '../assets/img/patrocinio/logo-24.jpg';
-import logo25 from '../assets/img/patrocinio/logo-25.jpg';
-import logo26 from '../assets/img/patrocinio/logo-26.jpg';
-import logo27 from '../assets/img/patrocinio/logo-27.jpg';
-import logo28 from '../assets/img/patrocinio/logo-28.jpg';
-import logo29 from '../assets/img/patrocinio/logo-29.jpg';
-import logo30 from '../assets/img/patrocinio/logo-30.jpg';  
-import logo31 from '../assets/img/patrocinio/logo-31.jpg';
-import logo32 from '../assets/img/patrocinio/logo-32.png';
-import logo33 from '../assets/img/patrocinio/logo-33.png';
-import logo34 from '../assets/img/patrocinio/logo-34.png';
-import logo35 from '../assets/img/patrocinio/logo-35.png';
-import logo36 from '../assets/img/patrocinio/logo-36.png';
-import logo37 from '../assets/img/patrocinio/logo-37.png';
-import logo38 from '../assets/img/patrocinio/logo-38.png';
-import logo39 from '../assets/img/patrocinio/logo-39.png';
-import logo40 from '../assets/img/patrocinio/logo-40.png';
-import logo41 from '../assets/img/patrocinio/logo-41.png';
-import logo42 from '../assets/img/patrocinio/logo-42.png';
-import logo43 from '../assets/img/patrocinio/logo-43.png';
-import logo44 from '../assets/img/patrocinio/logo-44.png';
-import logo45 from '../assets/img/patrocinio/logo-45.png';
-import logo46 from '../assets/img/patrocinio/logo-46.png';
-import logo47 from '../assets/img/patrocinio/logo-47.png';
-import logo48 from '../assets/img/patrocinio/logo-48.png';
-import logo49 from '../assets/img/patrocinio/logo-49.png';
-import logo50 from '../assets/img/patrocinio/logo-50.png';
-import logo51 from '../assets/img/patrocinio/logo-51.png';
-import logo52 from '../assets/img/patrocinio/logo-52.png';
-import logo53 from '../assets/img/patrocinio/logo-53.png';
-import logo54 from '../assets/img/patrocinio/logo-54.png';
-import logo55 from '../assets/img/patrocinio/logo-55.png';
-import logo56 from '../assets/img/patrocinio/logo-56.png';
-import logo57 from '../assets/img/patrocinio/logo-57.png';
-import logo58 from '../assets/img/patrocinio/logo-58.png';
-import logo59 from '../assets/img/patrocinio/logo-59.png';
-import logo60 from '../assets/img/patrocinio/logo-60.png';
-import logo61 from '../assets/img/patrocinio/logo-61.png';
-import logo92 from '../assets/img/patrocinio/logo-92.jpg';
-import logo93 from '../assets/img/patrocinio/logo-93.jpg';
-import logo94 from '../assets/img/patrocinio/logo-94.jpg';
-import logo95 from '../assets/img/patrocinio/logo-95.jpg';
-import logo96 from '../assets/img/patrocinio/logo-96.jpg';
-import logo97 from '../assets/img/patrocinio/logo-97.jpg';
-import logo98 from '../assets/img/patrocinio/logo-98.jpg';
-import logo99 from '../assets/img/patrocinio/logo-99.jpg';
-import logo100 from '../assets/img/patrocinio/logo-100.jpg';
-import logo101 from '../assets/img/patrocinio/logo-101.jpg';
-import logo102 from '../assets/img/patrocinio/logo-102.png';
-import logo103 from '../assets/img/patrocinio/logo-103.png';
-import logo104 from '../assets/img/patrocinio/logo-104.png';
-import logo105 from '../assets/img/patrocinio/logo-105.png';
-import logo106 from '../assets/img/patrocinio/logo-106.png';
-import logo107 from '../assets/img/patrocinio/logo-107.png';
-import logo108 from '../assets/img/patrocinio/logo-108.png';
-import logo109 from '../assets/img/patrocinio/logo-109.png';
-import logo110 from '../assets/img/patrocinio/logo-110.png';
-import logo111 from '../assets/img/patrocinio/logo-111.png';
-import logo112 from '../assets/img/patrocinio/logo-112.png';
-import logo113 from '../assets/img/patrocinio/logo-113.png';
-import logo114 from '../assets/img/patrocinio/logo-114.png';
-import logo115 from '../assets/img/patrocinio/logo-115.png';
-import logo116 from '../assets/img/patrocinio/logo-116.png';
-import logo117 from '../assets/img/patrocinio/logo-117.png';
-import logo118 from '../assets/img/patrocinio/logo-118.png';
-import logo119 from '../assets/img/patrocinio/logo-119.png';
-import logo120 from '../assets/img/patrocinio/logo-120.png';
-
-
-
-import apoio01 from '../assets/img/patrocinio/apoio01.png';
-import apoio02 from '../assets/img/patrocinio/apoio02.png';
+import {logosPatrociono, apoioLogos} from '../utils/importPatrocinadores';
 import Title from './../components/title/Title';
-// Continue para todos os logos
-
-const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo21, logo22, logo23, logo24, logo25, logo26, logo27, logo28, logo29, logo30, logo31, logo32, logo33, logo34, logo35, logo36, logo37, logo38, logo39, logo40, logo41, logo42, logo43, logo44, logo45, logo46, logo47, logo48, logo49, logo50, logo51, logo52, logo53, logo54, logo55, logo56, logo57, logo58, logo59, logo60, logo61, logo92, logo93, logo94, logo95, logo96, logo97, logo98, logo99, logo100, logo101, logo102, logo103, logo104, logo105, logo106, logo107, logo108, logo109, logo110, logo111, logo112, logo113, logo114, logo115, logo116, logo117, logo118, logo119, logo120
-];
-const apoios = [apoio01, apoio02];
 
 const PatrocinadoresPage = () => {
   return (
     <div id='patrocinadores' className="patrocinadores-page" style={{ backgroundImage: `url(${bgImage})` }}>
       <Title title='Patrocinadores' color='white' />
       <div className="patrocinadores-container">
-        {logos.map((logo, index) => (
+        {logosPatrociono.map((logo, index) => (
           <div
             key={index}
             className="patrocinador-box"
@@ -120,7 +19,7 @@ const PatrocinadoresPage = () => {
       </div>
       <Title title='Realização' color='white' />
       <div className="patrocinadores-container">
-        {apoios.map((logo, index) => (
+        {apoioLogos.map((logo, index) => (
           <div
             key={index}
             className="patrocinador-box apoio"
